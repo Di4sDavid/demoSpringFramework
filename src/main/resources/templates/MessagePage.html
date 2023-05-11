@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Message</title>
+</head>
+<body>
+  <h1>Message</h1>
+
+    <div th:each="msg : ${msglist}">
+        <p th:text="${msg.author}"></p>
+        <p th:text="${msg.timeStamp}"></p>
+        <p th:text="${msg.message}"></p>
+    </div>
+</body>
+</html>
